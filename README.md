@@ -83,7 +83,7 @@ This repository is organized into modules that align with the course structure. 
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/react-complete-guide.git
+   git clone https://github.com/OmarSharieff/react-mastery.git
    ```
 2. Navigate to a specific module folder to start exploring.  
 3. Follow along with the Udemy course for detailed explanations.  
