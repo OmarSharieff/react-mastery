@@ -9,3 +9,7 @@ A: 1) Writing complex JavaScript code becomes cumbersome
    2) Complex JavaScript code quickly becomes error-prone
    3) Complex JavaScript code often is hard to maintain or edit
    4) React offers a simpler mental model
+
+The following are links to a demo website built using Vanilla JavaScript and React
+Vanilla JavaScript: https://codesandbox.io/p/sandbox/vanilla-js-demo-6049kj?file=%2Findex.js
+React: https://codesandbox.io/p/sandbox/react-vs-vanilla-demo-uc08fv?file=%2Fsrc%2FApp.js
