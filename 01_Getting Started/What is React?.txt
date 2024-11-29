@@ -3,3 +3,9 @@ A: According to the official web page react.dev, it says "The library for web an
 
 Q: Why exactly whould you use it?
 A: It helps managing UI without reloading the entire web page. (smooth web pages transitions and fast response)
+
+Q: Why can't we just use Vanilla JavaScript?
+A: 1) Writing complex JavaScript code becomes cumbersome
+   2) Complex JavaScript code quickly becomes error-prone
+   3) Complex JavaScript code often is hard to maintain or edit
+   4) React offers a simpler mental model
