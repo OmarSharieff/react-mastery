@@ -1,7 +1,7 @@
 Q: What is React?
 A: According to the official web page react.dev, it says "The library for web and native user interfaces". In simple words, React is a library for building user interfaces.
 
-Q: Why exactly whould you use it?
+Q: Why exactly would you use it?
 A: It helps managing UI without reloading the entire web page. (smooth web pages transitions and fast response)
 
 Q: Why can't we just use Vanilla JavaScript?
