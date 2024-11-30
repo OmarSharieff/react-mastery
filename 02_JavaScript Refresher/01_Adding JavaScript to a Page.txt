@@ -9,4 +9,4 @@ e.g., <script src="script.js" defer></script>
 OR use type="module" attribute
 e.g., <script type="module" src="main.js"></script>
 
-ALTERNATIVELY, simply inject <script></script> tag at the end of body 
+ALTERNATIVELY, simply inject <script></script> tag at the end of body.
