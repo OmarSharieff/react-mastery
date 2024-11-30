@@ -1,0 +1,12 @@
+Typically, we use the <script></script> tag to inject JavaScript into our HTML file. You could either inject <script></script> in the <head></head> tag or you could inject it at the end of <body></body>.
+
+NOTE: However, it is important to note that both of these reflect a different behaivour when the webpage is loaded. 
+
+In the first approach where we inject <script></script> within <head></head>, the script is executed first after which the HTML content is rendered. This could block rendering of page until the script has finished loading and executing. This is best approach when you desire to run some critical scripts that must run before the page content is rendered (e.g., third-party analytics, polyfills, or initial configurations). The drawback here is it delays rendering of the page, which can hurt user experience and page load speed.
+
+To overcome this problem you could use the attribute 'defer' in your script tag
+e.g., <script src="script.js" defer></script>
+OR use type="module" attribute
+e.g., <script type="module" src="main.js"></script>
+
+ALTERNATIVELY, simply inject <script></script> tag at the end of body 
