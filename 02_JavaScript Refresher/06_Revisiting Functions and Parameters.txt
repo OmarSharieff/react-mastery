@@ -1,0 +1,34 @@
+You create function for a code that you don't want to execute immediately but at some point in the future when you call the function, and a function can be called multiple times.
+
+Example 1:
+function sampleFunction = () {
+    //some code here
+}
+sampleFunction() //calling the function
+
+Example 2:
+const sampleFunction = () {
+    //some code here
+}
+sampleFunction() //calling the function
+
+A function can take input data known as parameters
+Example:
+function addNumbers (num1, num2) {
+    return num1 + num2
+}
+Here 'num1' and 'num2' are the parameters of the function 'addNumbers'.
+
+When calling the function we pass arguments to input
+Example:
+addNumbers(4,5); //Output: 9
+Here 4 and 5 are the arguments.
+
+NOTE: You can also assign default values to parameters of the function
+Example:
+function greetUser(name, message="Hello") {
+    console.log(`${message} ${name}`);
+}
+greetUser("Omar"); //Output: Hello Omar
+
+Functions can also return value using 'return' keyword. Functions must only have one return statement at most. Functions without 'return' implicitly return "undefined".
