@@ -1,0 +1,22 @@
+If you see applications such as Twitter or Google Maps, these apps are mostly about data. The tweets that you see are data, the feeds that are loaded on your screen are data. The location that you want to go to is a data, the route that is calculated to get there is also a data.
+
+There are different types of Values (datatypes):
+1. String
+    - Text Values
+    - Wrapped with single or double quotes
+    - Can also be created with backticks ``
+    Example: "Hello World", 'Hi there', `Yo Boy`
+2. Number
+    - Positive or negative
+    - With decimal point (float) or without it (integer)
+    Example: 5, -23, 3.14, -8.12
+3. Boolean
+    - True or false
+    - A simple "Yes" or "No" value type
+    - Typically used in conditions
+    Example: true, false
+4. Null/undefined
+    - "There is no value."
+    - undefined: Default if no value was assigned yet
+    - null: Explicitly assigned by developer (reset value)
+    Example: undefined, null
