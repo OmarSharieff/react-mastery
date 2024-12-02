@@ -20,3 +20,25 @@ There are different types of Values (datatypes):
     - undefined: Default if no value was assigned yet
     - null: Explicitly assigned by developer (reset value)
     Example: undefined, null
+
+No matter what the data type is, if we want to store it then we use variables. Variables are data containers.
+
+Why use Variables?
+1. Reusability
+    - Store a value in a variable once and use it as often and in as many places as needed.
+2. Readability
+    - Organize your code over several lines rather than cramming everything into a single line.
+
+Key difference between 'let' and 'const'
+1. let:
+    - You can reassing the value after declaring the variable.
+    Example:
+    let name = "Alice";
+    name = "Bob"; // This works!
+    console.log(name); // Output: Bob
+
+2. const:
+    - You cannot reassign the value after declaring the variable.
+    Example:
+    const name = "Alice";
+    name = "Bob"; // This throws an error!
