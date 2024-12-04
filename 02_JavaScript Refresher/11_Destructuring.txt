@@ -1,0 +1,21 @@
+Q: What is Destructuring?
+A: Destructuring is a way to easily extract values from objects or arrays and store them in variables. It makes your code shorter and easier to read.
+Example 1:
+const [firstName, lastName] = ["Omar", "Sharieff"];
+console.log(firstName) //Output: "Omar"
+console.log(lastName) //Output: "Sharieff"
+
+Example 2:
+const {name, age} = {
+    name: "Omar",
+    age: 22
+}
+console.log(name) //Output: Omar
+console.log(age) //Output: 22
+NOTE: While destructuring objects, the name of the variables to be exact as the name of the properties being destructured. However you can use an alias for the destructured property like this:
+const {name: username, age} = {
+    name: "Omar",
+    age: 22
+}
+console.log(username) //Output: Omar
+In the above code, username is an alias for name property destructured.
