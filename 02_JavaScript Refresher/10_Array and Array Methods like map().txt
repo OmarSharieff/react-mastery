@@ -23,13 +23,24 @@ console.log(fruits[0]);          // Output: "Apple"
 console.log(fruits["0"]);        // Output: "Apple" (works because keys are strings in objects)
 
 Arrays Have Additional Features:
+  - Arrays have special methods (like push, pop, map, etc.) that are not available in regular objects.
+  - Arrays keep their keys (indices) in an ordered sequence, which is not guaranteed for regular objects.
 
-Arrays have special methods (like push, pop, map, etc.) that are not available in regular objects.
-Arrays keep their keys (indices) in an ordered sequence, which is not guaranteed for regular objects.
 Prototype Chain:
+  - Arrays are based on the Array prototype, which provides all the built-in methods like push, pop, and sort.
+  - The Array prototype itself is an object, which inherits from the base Object prototype.
 
-Arrays are based on the Array prototype, which provides all the built-in methods like push, pop, and sort.
-The Array prototype itself is an object, which inherits from the base Object prototype.
 Array Length:
+  - Arrays automatically track their length (the number of elements), which is something a regular object doesn’t do:
 
-Arrays automatically track their length (the number of elements), which is something a regular object doesn’t do:
+There are some array methods like 'findIndex' for example which executes a function for each array element and returns the index for which a the function returns true. Let us understand through an example.
+let ages = [7, 19, 14, 23];
+adultAgeIndex = ages.findIndex(age => age>=18)
+console.log(adultAgeIndex) //Output: 1
+Since element '19' satisfies the condition first, therefore its index is returned.
+
+There is another most used array method in React which is the 'map' method. It is used to manipulate the elements in an array
+Example:
+const names = ["Kevin", "Rob", "Daniel"]
+const editedNames = names.map(name => name+"!")
+console.log(editedNames) //Output: ["Kevin!", "Rob!", "Daniel!"]
