@@ -1,0 +1,27 @@
+Objects in Javascript help you store multiple values at once. For example:
+let userName = "Omar";
+let userAge = 22
+
+Instead of creating two separate variables to store name and age, we can simply create a user object like this:
+let user = {
+    name: "Omar",
+    age: 22
+}
+
+To access the values inside the object like name or age we can use the . operator to tap into the objects property values
+Example:
+console.log(user.name) //Output: Omar
+console.log(user.age) //Output: 22
+
+You can also create functions inside objects. These functions are called as "methods". Yes, functions inside a object are called as methods.
+Example:
+let user = {
+    name: "Omar",
+    age: 22,
+    greet(){
+        console.log("Hi");
+    }
+}
+In order to call this function, you can write 'user.greet()'
+
+There also another way of creating objects with a template, and that is using classes. You know that by definition "classes are blueprints for objects" and thats true because they provide a template for object creation.
