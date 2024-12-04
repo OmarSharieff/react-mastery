@@ -1,0 +1,35 @@
+Array ia a data structure in JavaScript used to hold multiple values. In JavaScript, an array is a special type of object.
+
+Q: What is an Array?
+A: An array is a special type of object that is used to store an ordered list of values. These values (called elements) are accessed using a number-based index.
+Example: const fruits = ["Apple", "Banana", "Cherry"];
+
+Q: How is an Array an Object?
+A: Array is an Object Under the Hood. When you create an array, JavaScript treats it as an object where:
+    i. The keys are numeric indices (0, 1, 2, etc.).
+    ii. The values are the elements of the array.
+Example:
+const fruits = ["Apple", "Banana", "Cherry"];
+
+// Internally, this array is similar to:
+const fruitsAsObject = {
+  0: "Apple",
+  1: "Banana",
+  2: "Cherry"
+};
+
+You can even access array elements using object syntax:
+console.log(fruits[0]);          // Output: "Apple"
+console.log(fruits["0"]);        // Output: "Apple" (works because keys are strings in objects)
+
+Arrays Have Additional Features:
+
+Arrays have special methods (like push, pop, map, etc.) that are not available in regular objects.
+Arrays keep their keys (indices) in an ordered sequence, which is not guaranteed for regular objects.
+Prototype Chain:
+
+Arrays are based on the Array prototype, which provides all the built-in methods like push, pop, and sort.
+The Array prototype itself is an object, which inherits from the base Object prototype.
+Array Length:
+
+Arrays automatically track their length (the number of elements), which is something a regular object doesn’t do:
