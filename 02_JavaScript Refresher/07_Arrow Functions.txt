@@ -1,0 +1,7 @@
+Arrow functions in JavaScript are a more concise way of writing functions. They use the => syntax. Here's a quick example: 
+Instead of:
+function(x) {return x*x}
+You can write it as (x) => x*x
+They're great for short functions and don't have their own 'this' context, which makes them especially handy in certain scenarios like array methods (e.g., map, filter).
+
+The arrow function syntax is very popular with anonymous functions! But that doesn't mean you cannot create anonymous functions using the normal function declaration.
