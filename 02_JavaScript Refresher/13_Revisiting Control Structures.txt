@@ -1,0 +1,26 @@
+Q: What are Control Structures in JavaScript?
+A: Control structures are like road signs in a JavaScript program. They help guide the flow of your code, deciding what happens next based on certain conditions or repetitions.
+
+Types of Control Structures
+1. Conditional Statements
+    - These control what code runs based on conditions (e.g., "If it's raining, take an umbrella").
+
+2. Loops
+    - These run the same block of code multiple times (e.g., "Keep eating until the plate is empty").
+
+3. Switch Statements
+    - These check a value and choose one of many possible actions (e.g., "If the light is red, stop; if green, go").
+
+1. 
+What are Control Structures in JavaScript?
+Control structures are like road signs in a JavaScript program. They help guide the flow of your code, deciding what happens next based on certain conditions or repetitions.
+
+Types of Control Structures
+Conditional Statements
+These control what code runs based on conditions (e.g., "If it's raining, take an umbrella").
+
+Loops
+These run the same block of code multiple times (e.g., "Keep eating until the plate is empty").
+
+Switch Statements
+These check a value and choose one of many possible actions (e.g., "If the light is red, stop; if green, go").
