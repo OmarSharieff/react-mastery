@@ -12,7 +12,7 @@ const {name, age} = {
 }
 console.log(name) //Output: Omar
 console.log(age) //Output: 22
-NOTE: While destructuring objects, the name of the variables to be exact as the name of the properties being destructured. However you can use an alias for the destructured property like this:
+NOTE: While destructuring objects, the name of the variables has to be exact as the name of the properties being destructured. However you can use an alias for the destructured property like this:
 const {name: username, age} = {
     name: "Omar",
     age: 22
