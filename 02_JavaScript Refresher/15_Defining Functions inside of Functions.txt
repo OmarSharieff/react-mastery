@@ -1,0 +1,20 @@
+We can define functions inside of a function in JavaScript. It is like nesting function inside of a function. This concept is called as closure in JavaScript. For Example:
+function outerFunction() {
+    var outerVariable = 10;
+    function innerFunction() {
+        console.log(outerVariable);
+    }
+    innerFunction();
+}
+outerFunction(); //Output: 10
+
+In the above example, innerFunction is defined inside of outerFunction. innerFunction has access to outerVariable. This is called as closure in JavaScript. innerFunction can access outerVariable because it is defined in outerFunction. If we try to access outerVariable outside of outerFunction, it will throw an error. This is how we can define functions inside of a function in JavaScript.
+
+Similar to this, there is another concept called as higher order functions in JavaScript. Higher order functions are functions that take other functions as arguments or return functions as output. For Example:
+function higherOrderFunction(callback) {
+    callback();
+}
+function callbackFunction() {
+    console.log('This is a callback function');
+}
+higherOrderFunction(callbackFunction); //Output: This is a callback function
