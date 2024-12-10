@@ -10,3 +10,8 @@ function functionExecutor(fnc) {
 }
 
 functionExecutor(greeting) //Output: "Hi there"
+
+There are some built-in function too that accept functions as values. For example:
+setTimeout(()=> {
+    console.log("timed out")
+}, 2000)
