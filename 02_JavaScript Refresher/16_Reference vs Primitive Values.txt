@@ -1,0 +1,19 @@
+Let us understand the difference between reference and primitive values in JavaScript.
+Primitive values are immutable in JavaScript. When we assign a primitive value to a variable, the value is copied to the variable. For Example:
+let a = 10;
+let b = a;
+a = 20;
+console.log(a); //Output: 20
+console.log(b); //Output: 10
+In the above example, a is assigned to 10. Then, a is assigned to b. When we change the value of a to 20, the value of b remains 10. This is because primitive values are copied to the variable.
+
+Reference values are mutable in JavaScript. When we assign a reference value to a variable, the reference is copied to the variable. For Example:
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+arr1.push(4);
+console.log(arr1); //Output: [1, 2, 3, 4]
+console.log(arr2); //Output: [1, 2, 3, 4]
+In the above example, arr1 is assigned to [1, 2, 3]. Then, arr1 is assigned to arr2. When we push 4 to arr1, the value of arr2 also changes to [1, 2, 3, 4]. This is because reference values are copied to the variable.
+
+Primitive data types are: Number, String, Boolean, Undefined, Null, and Symbol.
+Reference data types are: Object, Array, Function.
