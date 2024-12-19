@@ -1,36 +1,6 @@
-import reactImg from "./assets/react-core-concepts.png";
+import CoreComponents from "./components/CoreComponents.jsx";
+import Header from "./components/Header.jsx";
 import { CORE_CONCEPTS } from "./data.js";
-
-const randomWords = ["Fundamental", "Crucial", "Core"];
-
-function getRandomIndex(max) {
-  return Math.floor(Math.random() * max);
-}
-
-function CoreComponents({title, image, description}) {
-  return (
-    <li>
-      <img src={image} alt="logo" />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
-}
-
-function Header() {
-  let randomWord = randomWords[getRandomIndex(randomWords.length)];
-
-  return (
-    <header>
-      <img src={reactImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {randomWord} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  );
-}
 
 function App() {
   return (
