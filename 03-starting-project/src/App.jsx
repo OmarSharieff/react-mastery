@@ -1,9 +1,14 @@
+import { Children } from "react";
 import CoreComponents from "./components/CoreComponents.jsx";
 import Header from "./components/Header/Header.jsx";
 import TabButton from "./components/TabButton.jsx";
 import { CORE_CONCEPTS } from "./data.js";
 
 function App() {
+  function selectHandler(selectedButton) {
+    console.log(`${selectedButton} is selected`);
+  }
+  
   return (
     <div>
       <Header />
@@ -21,10 +26,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onSelect={()=>selectHandler('components')}>Components</TabButton>
+            <TabButton onSelect={()=>selectHandler('jsx')}>JSX</TabButton>
+            <TabButton onSelect={()=>selectHandler('props')}>Props</TabButton>
+            <TabButton onSelect={()=>selectHandler('state')}>State</TabButton>
           </menu>
         </section>
       </main>
