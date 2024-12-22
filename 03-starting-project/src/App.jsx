@@ -1,14 +1,32 @@
-import { Children } from "react";
+import { useState } from "react";
 import CoreComponents from "./components/CoreComponents.jsx";
 import Header from "./components/Header/Header.jsx";
 import TabButton from "./components/TabButton.jsx";
-import { CORE_CONCEPTS } from "./data.js";
+import { CORE_CONCEPTS, EXAMPLES } from "./data.js";
 
 function App() {
+  const [selectedTopic, setSelectedTopic] = useState();
+
   function selectHandler(selectedButton) {
-    console.log(`${selectedButton} is selected`);
+    setSelectedTopic(selectedButton)
+    console.log(selectedTopic);
   }
   
+  let tabContent = <p>Please select a topic</p>;
+
+  if (selectedTopic) {
+    tabContent = (
+      <div id="tab-content">
+          <h3>{EXAMPLES[selectedTopic].title}</h3>
+              <p>{EXAMPLES[selectedTopic].description}</p>
+              <pre>
+                <code>
+                  {EXAMPLES[selectedTopic].code}
+                </code>
+              </pre>
+      </div>
+    )
+  }
   return (
     <div>
       <Header />
@@ -31,6 +49,7 @@ function App() {
             <TabButton onSelect={()=>selectHandler('props')}>Props</TabButton>
             <TabButton onSelect={()=>selectHandler('state')}>State</TabButton>
           </menu>
+          {tabContent}
         </section>
       </main>
     </div>
