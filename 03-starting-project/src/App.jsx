@@ -8,8 +8,8 @@ function App() {
     <Fragment>
       <Header />
       <main>
-        <CoreConcepts/>
-        <Examples/>
+        <CoreConcepts />
+        <Examples />
       </main>
     </Fragment>
   );
