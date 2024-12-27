@@ -1,10 +1,10 @@
 import CoreConcept from "./CoreConcept.jsx";
 import { CORE_CONCEPTS } from "../data.js";
+import Section from "./Section.jsx";
 
 export default function CoreConcepts() {
   return (
-    <section id="core-concepts">
-      <h2>Time to get started!</h2>
+    <Section title="Time to get started!" id="core-concepts">
       <ul>
         {/*In the following 'CoreCompenents', we have used an alternative syntax for passing props which also works as a shorthand notation */}
         {CORE_CONCEPTS.map((conceptItem) => (
@@ -15,6 +15,6 @@ export default function CoreConcepts() {
             <CoreComponents {...CORE_CONCEPTS[2]}/>
             <CoreComponents {...CORE_CONCEPTS[3]}/> */}
       </ul>
-    </section>
+    </Section>
   );
 }
