@@ -24,7 +24,7 @@ function App() {
     // setActivePlayer((curActivePlayer) => (curActivePlayer === "X" ? "O" : "X"));
 
     setGameTurns((prevTurns) => {
-      let currentPlayer = deriveActivePlayer(prevTkurns);
+      let currentPlayer = deriveActivePlayer(prevTurns);
       let updatedTurns = [
         { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
         ...prevTurns,
